@@ -1,0 +1,21 @@
+plugins {
+    id 'scala'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.scala-lang:scala3-library_3:3.0.2'
+
+    // Use Scalatest for testing our library
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.scalatest:scalatest_3:3.2.10'
+    testImplementation 'org.scalatestplus:junit-4-13_3:3.2.10.0'
+
+    // Need scala-xml at test runtime
+    testRuntimeOnly 'org.scala-lang.modules:scala-xml_3:2.0.1'
+
+}
+
